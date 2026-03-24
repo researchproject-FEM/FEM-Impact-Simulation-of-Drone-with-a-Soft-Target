@@ -220,6 +220,7 @@ class HeadNeckParams:
 # SimParams
 # Time-integration settings: step size, total duration, and animation stride.
 # =============================================================================
+class SimParams:
     def __init__(self):
         self.dt = 1e-6
         self.T_end = 0.02
@@ -762,7 +763,7 @@ def muscle_activation(t, t_delay, tau_act):
     return 0.0 if t < t_delay else 1.0 - np.exp(-(t - t_delay) / tau_act)
 
 
-def headneck_accel(hp, t, theta, phi, theta_dot, phi_dot, tau_ext_theta, tau_ext_phi):
+def headneck_accel(hp, t, theta, theta_dot, phi, phi_dot, tau_ext_theta, tau_ext_phi):
     # Solves the fully coupled 2-DOF double-pendulum equations of motion for the
     # head-neck system using a Lagrangian formulation.
     #
