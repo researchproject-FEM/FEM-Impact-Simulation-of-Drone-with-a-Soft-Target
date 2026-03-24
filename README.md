@@ -1,6 +1,6 @@
 # Drone Arm Impact Simulator
 
-Simulates a drone arm striking a human head-neck system, coupling structural failure of the arm with biomechanical injury assessment. The model is designed to evaluate the risk posed by a falling or colliding drone to a bystander's head.
+Simulates a drone arm striking a human head-neck system, coupling structural failure of the arm with biomechanical injury assessment. The model is designed to evaluate the risk posed by a colliding drone to a bystander's head.
 
 ---
 
